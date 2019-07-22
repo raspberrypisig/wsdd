@@ -1,5 +1,12 @@
 # wsdd
 
+# Docker Image
+
+Look at Dockerfile, start-docker-containers.sh, stop-docker-containers.sh and docker-compose.yml
+
+
+
+
 wsdd implements a Web Service Discovery host daemon. This enables (Samba)
 hosts, like your local NAS device, to be found by Web Service Discovery Clients
 like Windows.
