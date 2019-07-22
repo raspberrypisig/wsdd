@@ -1,6 +1,15 @@
 version: '3.4'
 
 services:
+  portainer:
+    image: portainer/portainer:linux-arm
+    container_name: portainer
+    command: --no-auth
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
   samba:
     image: dperson/samba:armhf
     container_name: samba
@@ -23,3 +32,4 @@ services:
     ports:
       - "3702:3702/udp"
       - "5357:5357"      
+
